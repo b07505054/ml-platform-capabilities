@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "kernels",
+  "profile_id": "flashattention2",
+  "backend_id": "cuda",
+  "kernels": [
+    {
+      "kernel_id": "flashattention2.attention_gtx1650_maxq",
+      "operation": "Attention",
+      "availability": "unsupported",
+      "library": "FlashAttention2",
+      "support_status": "unsupported_on_gtx1650_maxq_compute_capability",
+      "supported_precisions": [],
+      "supported_features": [],
+      "measured": false,
+      "evidence": "declared",
+      "notes": [
+        "Unsupported on GTX 1650 Max-Q Phase 1 environment due compute capability boundary."
+      ]
+    }
+  ],
+  "notes": [
+    "Provider capability profile only; no benchmark evidence or repo implementation claim."
+  ]
+}

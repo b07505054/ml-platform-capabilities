@@ -1,0 +1,19 @@
+{
+  "": "https://json-schema.org/draft/2020-12/schema",
+  "": "https://example.invalid/ml-platform-capabilities/profile.schema.json",
+  "title": "ML Platform Capability Profile",
+  "type": "object",
+  "required": ["schema_version", "capability_type"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "capability_type": {
+      "type": "string",
+      "enum": ["model", "hardware", "platform", "backend", "kernels", "workload"]
+    },
+    "notes": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "additionalProperties": true
+}

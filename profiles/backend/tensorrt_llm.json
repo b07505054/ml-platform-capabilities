@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "backend",
+  "backend_id": "tensorrt_llm",
+  "backend": "TensorRT-LLM",
+  "backend_api": "TensorRT-LLM runtime/API",
+  "supports": {
+    "features": [],
+    "precisions": [],
+    "quantization": []
+  },
+  "does_not_claim": [
+    "this repo implements TensorRT-LLM",
+    "this repo modifies TensorRT-LLM kernels"
+  ],
+  "evidence": "declared",
+  "source": "ml_platform_capabilities_v1",
+  "notes": [
+    "Placeholder inference backend capability profile; not used by Phase 1 vLLM plan."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "backend",
+  "backend_id": "sglang",
+  "backend": "SGLang",
+  "backend_api": "SGLang server/API",
+  "supports": {
+    "features": [],
+    "precisions": [],
+    "quantization": []
+  },
+  "does_not_claim": [
+    "this repo implements SGLang",
+    "this repo modifies SGLang kernels"
+  ],
+  "evidence": "declared",
+  "source": "ml_platform_capabilities_v1",
+  "notes": [
+    "Placeholder inference backend capability profile; not used by Phase 1 vLLM plan."
+  ]
+}

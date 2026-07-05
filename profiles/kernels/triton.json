@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "kernels",
+  "profile_id": "triton",
+  "backend_id": "cuda",
+  "kernels": [
+    {
+      "kernel_id": "triton.attention",
+      "operation": "Attention",
+      "availability": "opaque",
+      "library": "Triton",
+      "support_status": "observed_fallback_in_vllm_server_log",
+      "supported_precisions": [
+        "float16"
+      ],
+      "supported_features": [
+        "attention"
+      ],
+      "measured": false,
+      "evidence": "artifact"
+    },
+    {
+      "kernel_id": "triton.rmsnorm",
+      "operation": "RMSNorm",
+      "availability": "opaque",
+      "library": "Triton",
+      "support_status": "provider_kernel_possible_not_integrated_by_this_repo",
+      "supported_precisions": [
+        "float16"
+      ],
+      "supported_features": [],
+      "measured": false,
+      "evidence": "declared"
+    },
+    {
+      "kernel_id": "triton.dequant",
+      "operation": "Dequant",
+      "availability": "unsupported",
+      "library": "Triton",
+      "support_status": "not_used_by_phase1_none_quantization",
+      "supported_precisions": [],
+      "supported_features": [],
+      "measured": false,
+      "evidence": "declared"
+    },
+    {
+      "kernel_id": "triton.requant",
+      "operation": "Requant",
+      "availability": "unsupported",
+      "library": "Triton",
+      "support_status": "not_used_by_phase1_none_quantization",
+      "supported_precisions": [],
+      "supported_features": [],
+      "measured": false,
+      "evidence": "declared"
+    }
+  ],
+  "notes": [
+    "Provider capability profile only; no benchmark evidence or repo implementation claim."
+  ]
+}

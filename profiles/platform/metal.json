@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "platform",
+  "backend_id": "mps",
+  "backend": "MPS",
+  "backend_api": "PyTorch MPS",
+  "supports": {
+    "features": [
+      "PyTorch MPS baseline"
+    ]
+  },
+  "evidence": "declared",
+  "source": "capability_profile_database_v1",
+  "notes": [
+    "MPS is used for comparison, not primary runtime policy target yet.",
+    "Platform profile: compiler/runtime input for hardware software platform capability, not an inference backend."
+  ],
+  "platform_id": "metal",
+  "platform": "Metal"
+}

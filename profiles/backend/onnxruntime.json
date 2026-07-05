@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "backend",
+  "backend_id": "onnxruntime",
+  "backend": "ONNX Runtime",
+  "backend_api": "ONNX Runtime API",
+  "supports": {
+    "features": [],
+    "precisions": [],
+    "quantization": []
+  },
+  "does_not_claim": [
+    "this repo implements ONNX Runtime",
+    "this repo modifies ONNX Runtime kernels"
+  ],
+  "evidence": "declared",
+  "source": "ml_platform_capabilities_v1",
+  "notes": [
+    "Placeholder inference backend capability profile; not used by Phase 1 vLLM plan."
+  ]
+}

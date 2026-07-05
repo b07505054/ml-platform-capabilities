@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "backend",
+  "backend_id": "vllm",
+  "backend": "vLLM",
+  "backend_api": "OpenAI-compatible HTTP API",
+  "supports": {
+    "features": [
+      "OpenAI-compatible serving",
+      "continuous batching",
+      "paged attention",
+      "prefix caching",
+      "chunked prefill"
+    ],
+    "backend_capabilities": [
+      {
+        "name": "prefix caching",
+        "measured": false
+      }
+    ],
+    "quantization": [
+      "none"
+    ],
+    "speculative_decoding": {
+      "supported": false,
+      "measured": false
+    },
+    "prefix_cache": {
+      "supported": true,
+      "measured": false
+    },
+    "chunked_prefill": {
+      "supported": true,
+      "measured": false
+    },
+    "paged_attention": {
+      "supported": true,
+      "measured": false
+    },
+    "tensor_parallel": {
+      "supported": false,
+      "max_size": 1,
+      "measured": false
+    },
+    "pipeline_parallel": {
+      "supported": false,
+      "max_size": 1,
+      "measured": false
+    }
+  },
+  "does_not_claim": [
+    "this repo implements vLLM",
+    "this repo modifies vLLM kernels"
+  ],
+  "evidence": "declared",
+  "source": "capability_profile_database_v1",
+  "notes": [
+    "vLLM runtime capabilities are backend facts, not repository implementations.",
+    "Measured server policy must use OpenAI-compatible measured baselines for deployment selection.",
+    "Phase 1 runtime config is single-GPU only: tensor_parallel_size=1 and pipeline_parallel_size=1.",
+    "Prefix cache and chunked prefill are backend capabilities here, not measured speedup claims.",
+    "Kernel providers are declared in profiles/kernels; vLLM backend profile references them but does not claim this repo implements them.",
+    "Inference backend profile: describes a model execution backend, not a hardware platform."
+  ],
+  "supported_kernel_libraries": [
+    "flashattention2",
+    "cutlass",
+    "cublas",
+    "triton",
+    "xformers"
+  ]
+}

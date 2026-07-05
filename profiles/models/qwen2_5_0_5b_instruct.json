@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "model",
+  "model_id": "qwen2_5_0_5b_instruct",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "family": "llm",
+  "source": "declared_phase1_target",
+  "notes": [
+    "Model identity/profile input only; weights are not modified or stored here."
+  ]
+}

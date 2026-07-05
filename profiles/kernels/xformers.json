@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "kernels",
+  "profile_id": "xformers",
+  "backend_id": "cuda",
+  "kernels": [
+    {
+      "kernel_id": "xformers.attention",
+      "operation": "Attention",
+      "availability": "opaque",
+      "library": "xFormers",
+      "support_status": "provider_library_possible_not_integrated_by_this_repo",
+      "supported_precisions": [
+        "float16"
+      ],
+      "supported_features": [
+        "attention"
+      ],
+      "measured": false,
+      "evidence": "declared"
+    }
+  ],
+  "notes": [
+    "Provider capability profile only; no benchmark evidence or repo implementation claim."
+  ]
+}

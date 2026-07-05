@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "platform",
+  "backend_id": "cuda",
+  "backend": "CUDA",
+  "backend_api": "CUDA Runtime",
+  "supports": {
+    "precisions": [
+      "fp16"
+    ],
+    "features": [
+      "custom kernels possible"
+    ]
+  },
+  "future_capabilities": [
+    "fp8",
+    "nvfp4",
+    "mxfp4"
+  ],
+  "evidence": "declared",
+  "source": "capability_profile_database_v1",
+  "notes": [
+    "Future precision capabilities require hardware-specific validation.",
+    "Platform profile: compiler/runtime input for hardware software platform capability, not an inference backend."
+  ],
+  "platform_id": "cuda",
+  "platform": "CUDA"
+}

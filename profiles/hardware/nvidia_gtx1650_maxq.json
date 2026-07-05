@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "hardware",
+  "hardware_id": "nvidia_gtx1650_maxq",
+  "vendor": "NVIDIA",
+  "family": "Turing",
+  "model": "GeForce GTX 1650 Max-Q",
+  "components": [
+    "gpu",
+    "cuda"
+  ],
+  "memory": {
+    "vram_mb": 4096,
+    "vram_gb": 4
+  },
+  "attributes": {
+    "gpu": true,
+    "cuda": true,
+    "compute_capability": "7.5",
+    "fp16": true,
+    "fp8": false,
+    "nvfp4": false,
+    "mxfp4": false,
+    "cuda_runtime": "13.2",
+    "tensor_core_support": "unknown",
+    "bf16": false,
+    "int8": false,
+    "int4": false,
+    "multi_gpu": false
+  },
+  "evidence": "declared",
+  "source": "capability_profile_database_v1",
+  "notes": [
+    "FP16 supported.",
+    "FP8/NVFP4/MXFP4 not claimed.",
+    "vLLM measured baseline exists but this hardware is memory-constrained.",
+    "CUDA runtime observed as 13.2 on the current target machine.",
+    "Single GPU only; tensor and pipeline parallelism above 1 are not claimed.",
+    "Tensor Core, BF16, INT8, and INT4 support are not claimed for this GTX 1650 Max-Q profile.",
+    "tensor_core_support is marked unknown because it was not runtime-detected for this machine during Phase 1."
+  ]
+}

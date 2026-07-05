@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "workload",
+  "workload_id": "qwen_short_to_medium_32",
+  "request_count": 32,
+  "shared_prefix": true,
+  "prompt_len_bucket": "short_to_medium",
+  "output_len": 128,
+  "source": "declared_phase1_target",
+  "notes": [
+    "Workload profile input only; measured metrics live in runtime results."
+  ]
+}

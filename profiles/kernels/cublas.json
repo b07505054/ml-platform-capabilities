@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "capability_type": "kernels",
+  "profile_id": "cublas",
+  "backend_id": "cuda",
+  "kernels": [
+    {
+      "kernel_id": "cublas.matmul",
+      "operation": "MatMul",
+      "availability": "builtin",
+      "library": "cuBLAS",
+      "support_status": "cuda_library_provider",
+      "supported_precisions": [
+        "float16",
+        "float32"
+      ],
+      "supported_features": [],
+      "measured": false,
+      "evidence": "declared"
+    }
+  ],
+  "notes": [
+    "Provider capability profile only; no benchmark evidence or repo implementation claim."
+  ]
+}
