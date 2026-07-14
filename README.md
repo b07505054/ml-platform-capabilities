@@ -8,7 +8,7 @@ These profiles are declared planning inputs. They do not execute models, start r
 
 Last verified: 2026-07-14.
 
-Repository HEAD: `aac593da0bdde7a95c38c03920fc4d00b73011db`.
+Repository source/evidence HEAD before documentation refresh: `795e95309392b32310f9b90cd4049f1f42ebb660`.
 Canonical architecture host: `../ml-graph-compiler-runtime`.
 
 This repository is the intended ownership home for declared capability facts, but it is not the sole source of truth today. Compiler-local target profiles currently contain richer/newer information for active Raspberry Pi CPU kernel/thread paths and deployment-specific constraints. Runtime evidence directories own measured latency, throughput, correctness, accuracy, oracle, regret, and telemetry.
