@@ -11,7 +11,7 @@ Last verified: 2026-07-16.
 Repository source/evidence HEAD before documentation refresh: `16ce44974ae4b708320479454c323dd794501bf4`.
 Canonical architecture host: `../ml-graph-compiler-runtime`.
 
-This repository is the intended ownership home for declared capability facts, but it is not the sole source of truth today. Compiler-local target profiles currently contain richer/newer information for active Raspberry Pi CPU kernel/thread paths, AArch64 backend-codegen schedule evidence, deployment-specific constraints, and the measured vLLM `max_num_seqs` selector input. Runtime evidence directories own measured latency, throughput, correctness, accuracy, oracle, regret, root-cause analysis, and telemetry.
+This repository is the intended ownership home for declared capability facts, but it is not the sole source of truth today. Compiler-local target profiles currently contain richer/newer information for active Raspberry Pi CPU kernel/thread paths, AArch64 backend-codegen schedule evidence, RMSNorm exact GPU launch/candidate evidence, deployment-specific constraints, and the measured vLLM `max_num_seqs` selector input. Runtime evidence directories own measured latency, throughput, correctness, accuracy, oracle, regret, root-cause analysis, and telemetry.
 
 ## Owns
 
@@ -37,7 +37,7 @@ This repository is the intended ownership home for declared capability facts, bu
 - Raspberry Pi profile details are not fully canonicalized here.
 - Runtime executable capability and deployment capability are incomplete.
 - Compiler-local target profiles are richer than this repository for several P1/E3 paths.
-- AArch64 schedule/codegen and vLLM `max_num_seqs` measured-policy facts have not been normalized into reusable capability-profile schemas.
+- AArch64 schedule/codegen, RMSNorm exact GPU launch/candidate facts, and vLLM `max_num_seqs` measured-policy facts have not been normalized into reusable capability-profile schemas.
 - XNNPACK software/artifact requirements are documented in compiler/runtime evidence, not yet fully normalized here.
 - Synchronization between compiler-local profiles and this repository is manual.
 
